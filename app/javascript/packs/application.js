@@ -13,3 +13,4 @@
 //
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
+import "../../assets/stylesheets/application.tailwind.css"; // Or tailwind.css

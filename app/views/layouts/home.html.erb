@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReactOnRailsWithShakapacker</title>
+    <%= csrf_meta_tags %>
+    <%= javascript_pack_tag 'home-bundle' %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+  </head>
+
+  <body class="bg-gray-100">
+    <%# <%= react_component("Navbar", props: { projects: @projects.as_json }, prerender: false) %> %>
+    
+
+
+
+    <!-- Page Content -->
+    <%= yield %>
+
+    <script>
+      // Mobile menu toggle functionality
+      document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+
+      document.getElementById('mobile-menu-close').addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    </script>
+  </body>
+</html>

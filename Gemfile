@@ -59,3 +59,10 @@ end
 gem "shakapacker", "= 8.0"
 
 gem "react_on_rails", "= 14.0.4"
+
+gem "tailwindcss-rails", "~> 3.0"
+
+# Gemfile
+gem "bcrypt", "~> 3.1.7"
+
+gem "devise", "~> 4.9"

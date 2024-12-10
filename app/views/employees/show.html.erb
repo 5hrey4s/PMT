@@ -1,0 +1,3 @@
+<% logger.debug @employee.inspect %>
+<%= react_component("EmployeePage", props: { employee: @employee.as_json }, prerender: false) %>
+<%# <%= @project.to_json.html_safe %> %>
